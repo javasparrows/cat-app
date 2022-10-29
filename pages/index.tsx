@@ -55,13 +55,14 @@ const Home: NextPage<IndexPageProps> = ({ initialCatImage }) => {
           src={catImage.url}
           alt="cat"
           priority
-          width={500}
-          height={(500 / catImage.width) * catImage.height}
+          width={300}
+          height={(300 / catImage.width) * catImage.height}
         />
       )}
       <button style={{ marginTop: "18" }} onClick={handleClick}>
         今日の猫さん
       </button>
+      <p>↑ 押すと違う猫さんが表示されるよ</p>
     </div>
   );
 };
